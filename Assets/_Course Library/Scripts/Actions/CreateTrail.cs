@@ -39,6 +39,14 @@ public class CreateTrail : MonoBehaviour
         }
     }
 
+    public void ToggleTrail()
+    {
+        if (!currentTrail)
+            StartTrail();
+        else
+            EndTrail();
+    }
+
     public void SetWidth(float value)
     {
         width = value;
